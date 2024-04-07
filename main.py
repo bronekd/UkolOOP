@@ -12,6 +12,7 @@
 from Device import Device
 from CoffeeMachine import CoffeeMachine
 from Blender import Blender
+from MeatGrinder import MeatGrinder
 
 my_device = Device("Tiskárna", "Cannon", 2016)
 my_device.typ_device()
@@ -25,4 +26,9 @@ print()
 my_blender = Blender("Mixér Mix Vše", "Sencor", "2021", 2000, 5)
 my_blender.zobraz_info()
 my_blender.mixuj()
+print()
 
+my_meat_grinder = MeatGrinder("Mlýnek Melu vše", "Rowenta", "2021", 2000, 2)
+my_meat_grinder.mleti()
+my_meat_grinder.zmena_nozu(5)
+my_meat_grinder.mleti()
