@@ -9,3 +9,8 @@
 #Na základě třídy Money vytvořte třídu Product. Implementujte metodu, která vám umožní snížit cenu o zadané číslo.
 #Implementujte metody a pole požadované pro každou třídu.
 
+from Device import Device
+
+
+my_device = Device("Tiskárna", "Cannon", 2016)
+my_device.typ_device()

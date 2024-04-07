@@ -5,4 +5,4 @@ class Device:
         self.vyrobce = vyrobce
         self.rok_vyroby = rok_vyroby
     def typ_device(self):
-        print(f"Device Jméno: {name}, Výrobce: {vyrobce}, Rok výroby: {rok_vyroby}")
+        print(f"Device Jméno: {self.name}, Výrobce: {self.vyrobce}, Rok výroby: {self.rok_vyroby}")
