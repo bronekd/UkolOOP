@@ -11,12 +11,18 @@
 
 from Device import Device
 from CoffeeMachine import CoffeeMachine
+from Blender import Blender
 
 my_device = Device("Tiskárna", "Cannon", 2016)
 my_device.typ_device()
+print()
 
 my_coffee_machine = CoffeeMachine("Kávovar Delux", "Caffe Master", 2020, 200, "Lungo")
 my_coffee_machine.priprav_kavu()
 my_coffee_machine.zobraz_info()
+print()
 
+my_blender = Blender("Mixér Mix Vše", "Sencor", "2021", 2000, 5)
+my_blender.zobraz_info()
+my_blender.mixuj()
 
