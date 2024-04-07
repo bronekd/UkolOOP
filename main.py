@@ -10,7 +10,13 @@
 #Implementujte metody a pole požadované pro každou třídu.
 
 from Device import Device
-
+from CoffeeMachine import CoffeeMachine
 
 my_device = Device("Tiskárna", "Cannon", 2016)
 my_device.typ_device()
+
+my_coffee_machine = CoffeeMachine("Kávovar Delux", "Caffe Master", 2020, 200, "Lungo")
+my_coffee_machine.priprav_kavu()
+my_coffee_machine.zobraz_info()
+
+
