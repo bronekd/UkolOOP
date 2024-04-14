@@ -18,3 +18,28 @@
 #Vytvořte seznam obrazců, uložte obrazce do souboru, načtěte je do jiného seznamu a zobrazte informace o každém obrazci.
 
 
+from Shapes import Shape,Rectangle, Circle, RightTriangle
+
+# Vytvoření seznamu tvarů
+shapes = [
+    Rectangle(10, 5),
+    Circle(7),
+    RightTriangle(3, 4)
+]
+
+#uložení do souboru
+for index, shape in enumerate(shapes):
+    shape.Save(f"shapes/{index}.txt")
+
+#načtení tvarů
+loaded_shapes = []
+for index in range(len(shapes)):
+    loaded_shape = Shape.Load(f"shapes/{index}.txt")
+    loaded_shapes.append(loaded_shape)
+
+#zobrzaení infomací o tvaru
+for shape in loaded_shapes:
+    shape.Show()
+
+
+
