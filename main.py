@@ -1,34 +1,20 @@
-# Úkol
-# Úkol 1
-#Vytvořte třídu Device obsahující informace o zařízení. Pomocí dědičnosti implementujte třídu CoffeeMachine (obsahuje informace o kávovaru), třídu Blender (obsahuje informace o mixéru), třídu MeatGrinder (obsahuje informace o mlýnku na maso).
-# # Každá třída musí mít požadované metody.
-# Úkol 2
-# Vytvořte třídu Loď obsahující informace o lodi. Použijte dědičnost k implementaci třídy Fregata (obsahuje informace o fregatě), třídy Destroyer (obsahuje informace o torpédoborci), třídy Cruiser (obsahuje informace o křižníku). Každá třída musí mít požadované metody.
-# Úkol 3
-# Vytvořte třídu Money pro práci s penězi (objekt třídy pracuje s jednou měnou). Třída musí poskytovat pole pro uložení celé části (dolary, eura, hřivny atd.) a pole pro uložení zlomkové části (centy, eurocenty, kopejky atd.) Implementujte metody pro tisk množství a nastavení hodnot pro díly (celé číslo a zlomky).
-#Na základě třídy Money vytvořte třídu Product. Implementujte metodu, která vám umožní snížit cenu o zadané číslo.
-#Implementujte metody a pole požadované pro každou třídu.
+#Úkol:
+#Úkol 1:
+#Vytvořte základní třídu Shape s metodou pro výpočet plochy. Vytvořte odvozené třídy: obdélník, kruh, pravý trojúhelník, lichoběžník s vlastními metodami pro výpočet plochy.
+#Úkol 2
+#Přepište metody int (vrací oblast) a str (vrací informace o tvaru) z úkolu 1.
+#Úkol 3
+#Vytvořte základní třídu Shape pro kreslení plochých tvarů.
+#Definujte následující metody:
+#- Show() — tisk informací o tvaru;
+#- Save() — uložení tvaru do souboru;
+#- Load() – čtení tvaru ze souboru.
+#Definujte odvozené třídy:
+#- Čtverec – čtverec definovaný souřadnicemi horního levý roh a délka strany;
+#- Obdélník – obdélník se zadanými souřadnicemi levý horní roh a rozměry;
+#Domácí práce
+#- Kružnice – kružnice se zadanými souřadnicemi středu a poloměru;
+#- Elipsa — elipsa se zadanými souřadnicemi horního rohu opsaného obdélníku, jehož strany jsou rovnoběžné s osami souřadnic a rozměry tohoto obdélníku.
+#Vytvořte seznam obrazců, uložte obrazce do souboru, načtěte je do jiného seznamu a zobrazte informace o každém obrazci.
 
-from Device import Device
-from CoffeeMachine import CoffeeMachine
-from Blender import Blender
-from MeatGrinder import MeatGrinder
 
-my_device = Device("Tiskárna", "Cannon", 2016)
-my_device.typ_device()
-print()
-
-my_coffee_machine = CoffeeMachine("Kávovar Delux", "Caffe Master", 2020, 200, "Lungo")
-my_coffee_machine.priprav_kavu()
-my_coffee_machine.zobraz_info()
-print()
-
-my_blender = Blender("Mixér Mix Vše", "Sencor", "2021", 2000, 5)
-my_blender.zobraz_info()
-my_blender.mixuj()
-print()
-
-my_meat_grinder = MeatGrinder("Mlýnek Melu vše", "Rowenta", "2021", 2000, 2)
-my_meat_grinder.mleti()
-my_meat_grinder.zmena_nozu(5)
-my_meat_grinder.mleti()

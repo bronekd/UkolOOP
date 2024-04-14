@@ -1,4 +1,4 @@
-from Device import Device
+from Devices.Device import Device
 
 class MeatGrinder(Device):
     def __init__(self, name, vyrobce, rok_vyroby, vykon_motoru, pocet_nozu):
