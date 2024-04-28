@@ -1,0 +1,39 @@
+Task 1
+Develop an app that imitates a server request queue. There should be clients sending requests to the server, each having its priority.
+Each new client is queued depending on the priority. Save the request statistics (user, time) in a separate queue.
+Provide statistics output. You can choose the necessary data structures on your own.
+Task 2
+Create a simulation model Boat Landing. Input the fol- lowing information:
+1. Average time between the appearances of passengers on the pier at all times of the day;
+2. Average time between the appearances of boats on the pier at all times of the day;
+3. Boat’s type of stop (final or not).
+Determine the following:
+1. Averagetimeofapersonbeingonthepearduringastop,
+2. Sufficienttimeintervalbetweenboatarrivalssothatthere
+are not more than N people on the pier at the same time,
+3. The number of empty seats on the boat is random.
+You can choose the necessary data structures on your own.
+1
+
+ Homework
+ Task 3
+Create a dictionary app. Let it be English-Spanish or French-German dictionary, or any other languages. The app should do the following:
+■ provide initial data input for the dictionary, ■ display the word and its translations,
+■ add, replace, delete word translations,
+■ add, replace, delete a word,
+■ display top 10 most popular words (determine the pop- ularity based on the request counter),
+■ display top 10 least popular words (determine the popu- larity based on the request counter).
+You can choose the necessary data structures on your own.
+Task 4
+Create a database of penalties for a tax office. A person will be identified by his or her personal identification code. One person may have multiple penalties.
+Implement the following:
+1. Full hard copy of the database.
+2. Hard copy of data by a specific code.
+3. Hard copy of data by a specific type of penalty.
+4. Hard copy of data by a specific city.
+5. Adding a new person and information about him or her.
+6. Adding new penalties for the existing entry.
+7. Delete a penalty.
+8. Replaceinformationaboutapersonandrelatedpenalties.
+You can choose the necessary data structures on your own.
+2
