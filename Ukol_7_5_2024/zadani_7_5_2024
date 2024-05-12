@@ -1,0 +1,24 @@
+Anglicky
+Task 1
+Implement a Builder pattern. Test the work of the created class.
+Task 2
+Create a pasta cooking app. The app should create at least three types of pasta. Classes of various pasta must have the following methods:
+■ Type of pasta; ■ Sauce;
+■ Topping;
+■ Dressing.
+Use creational patterns for this task.
+Task 3
+Implement a Prototype pattern. Test the work of the cre- ated class.
+
+
+Česky:
+Úkol 1
+Implementujte vzor Builderu. Vyzkoušejte práci vytvořené třídy.
+Úkol 2
+Vytvořte aplikaci pro vaření těstovin. Aplikace by měla vytvořit alespoň tři druhy těstovin. Třídy různých těstovin musí mít následující metody:
+■ Druh těstovin; ■ omáčka;
+■ Poleva;
+■ Oblékání.
+Pro tento úkol použijte kreativní vzory.
+Úkol 3
+Implementujte prototypový vzor. Vyzkoušejte práci vytvořené třídy.
