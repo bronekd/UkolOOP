@@ -18,7 +18,7 @@ Implementujte vzor Builderu. Vyzkoušejte práci vytvořené třídy.
 Vytvořte aplikaci pro vaření těstovin. Aplikace by měla vytvořit alespoň tři druhy těstovin. Třídy různých těstovin musí mít následující metody:
 ■ Druh těstovin; ■ omáčka;
 ■ Poleva;
-■ Oblékání.
+■ Dressing.
 Pro tento úkol použijte kreativní vzory.
 Úkol 3
 Implementujte prototypový vzor. Vyzkoušejte práci vytvořené třídy.
