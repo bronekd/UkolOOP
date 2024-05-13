@@ -1,14 +1,20 @@
-
+#Task 2 a kombinace ostatních tasku
 
 class Pasta:
-    def __init__(self):
+    def __init__(self, strategy=None):
         self.type = None
         self.sauce = None
         self.topping = None
         self.dressing = None
+        self.cooking_strategy = strategy
+
 
     def __str__(self):
         return f'{self.type} těstoviny s: {self.sauce} omáčkou, {self.topping} toppingem a  {self.dressing} dressingem'
+
+    def cook(self):
+        return self.cooking_strategy.cook(str(self))
+
 
 class PastaBuilder:
     def __init__(self):
@@ -45,6 +51,28 @@ class CheeseDecorator(PastaDecorator): #konkrétní dekorator k přidání sýru
         return f'{self.pasta}, Extra Cheese'
 
 
+#Strategy pattern
+class CookingStrategy:
+    def cook(self, pasta):
+        pass
+
+class BoilStrategy(CookingStrategy):
+    def cook(self, pasta):
+        return f"{pasta} - Boiled"
+
+class BakeStrategy(CookingStrategy):
+    def cook(self, pasta):
+        return f"{pasta} - Baked"
+
+class FryStrategy(CookingStrategy):
+    def cook(self, pasta):
+        return f"{pasta} - Fried"
+
+
+
+
+
+
 if __name__ == '__main__':
     #builder
     builder_spaghetti = PastaBuilder()
@@ -64,8 +92,20 @@ if __name__ == '__main__':
 
     print(spaghetti_with_cheese)
     print(penne_with_cheese)
+    print()
 
 
+    # Vytvoření strategie pro vaření
+    boil_strategy = BoilStrategy()
+    bake_strategy = BakeStrategy()
+    fry_strategy = FryStrategy()
 
+    #aplikace strategy patterns
+    spaghetti.cooking_strategy = boil_strategy
+    penne.cooking_strategy = bake_strategy
+
+    #Vaření podle strategy
+    print(spaghetti.cook())
+    print(penne.cook())
 
 
