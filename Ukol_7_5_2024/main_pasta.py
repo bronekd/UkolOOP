@@ -34,7 +34,15 @@ class PastaBuilder:
         return self.pasta
 
 
+class PastaDecorator: # hlavní třída pro dekoratery
+    def __init__(self, pasta):
+        self.pasta = pasta
+    def __str__(self):
+        return str(self.pasta)
 
+class CheeseDecorator(PastaDecorator): #konkrétní dekorator k přidání sýru
+    def __str__(self):
+        return f'{self.pasta}, Extra Cheese'
 
 
 if __name__ == '__main__':
@@ -48,6 +56,14 @@ if __name__ == '__main__':
 
     print(spaghetti)
     print(penne)
+    print()
+
+    # aplikace dekorator
+    spaghetti_with_cheese = CheeseDecorator(spaghetti)
+    penne_with_cheese = CheeseDecorator(penne)
+
+    print(spaghetti_with_cheese)
+    print(penne_with_cheese)
 
 
 
