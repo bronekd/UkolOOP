@@ -1,0 +1,34 @@
+Task 1
+The user types in a number from 1 to 100. If the number is a multiple of 3 (divisible by 3 without remainder), print the word Fizz. If the number is a multiple of 5, print the wordBuzz. If the word is a multiple of 3 and 5, print Fizz Buzz. If the word is not a multiple of 3 and 5, print the number.
+If the user typed in a number out of the range, print an error message.
+
+Task 2
+Write a program that, at the user’s choice, raises the typed in number to the power of 0 through 7.
+
+Task 3
+Write a program that calculates the cost of a call for dif- ferent mobile phone operators. The user types in the cost of the call and chooses operators for the outgoing and incoming calls. Print the cost.
+
+Task 4
+The salary of a salesperson is $200 + percentage of sales as follows: up to $500 — 3%, from 500 to 1000 — 5%, over 1000 — 8%. The user types in the sales for three salespersons. Determine their salary, the best salesperson, give him or her a $200 bonus, print the result.
+
+CZ:
+Úkol 1:
+Uživatel zadá číslo od 1 do 100. Pokud je číslo násobkem 3 (dělitelným 3 bez zbytku), vytiskněte slovo "Fizz". Pokud je číslo násobkem 5, vytiskněte slovo "Buzz". Pokud je číslo násobkem 3 i 5, vytiskněte "Fizz Buzz". Pokud číslo není násobkem 3 ani 5, vytiskněte samotné číslo. Pokud uživatel zadá číslo mimo tento rozsah, vytiskněte chybovou zprávu.
+
+Úkol 2:
+Napište program, který podle volby uživatele umocní zadané číslo na mocniny od 0 do 7.
+
+Úkol 3:
+Napište program, který vypočítá náklady na hovor pro různé mobilní operátory. Uživatel zadá náklady na hovor a zvolí operátory pro odchozí a příchozí hovory. Vytiskněte náklady.
+
+Úkol 4:
+Plat obchodního zástupce je $200 + procento z prodeje následujícím způsobem: do $500 — 3%, od $500 do $1000 — 5%, nad $1000 — 8%. Uživatel zadá prodeje tří obchodních zástupců. Určete jejich plat, nejlepšího obchodního zástupce, udělte mu $200 bonus a vytiskněte výsledek.
+
+
+
+
+
+
+
+
+
