@@ -5,9 +5,9 @@ class SalesCalculator:
         self.salespeople = salespeople
 
     def find_best_sales_person(self):
-        best_sales_person = max(self.salespeople, key=lambda sp: sp.sale)
-        best_sales_person *= 200
-        return best_sales_person
+        best_salesperson = max(self.salespeople, key=lambda sp: sp.sales)
+        best_salesperson.salary += 200
+        return best_salesperson
 
     def calculate_salaries(self):
         for sp in self.salespeople:
