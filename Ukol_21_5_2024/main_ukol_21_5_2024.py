@@ -12,10 +12,10 @@ class Task1:
     def add(self, num1, num2, num3):
         return num1+num2+num3
 
-task = Task1()
-a = task.add(2,2,2)
+#task = Task1()
+#a = task.add(2,2,2)
 
-print(a)
+#print(a)
 
 
 
