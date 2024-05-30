@@ -1,6 +1,7 @@
 
-#task 1 řešení 1
-#zajímalo by mě zda by toto řešení vyhovovalo. Použití zámku použe u funkce generování čísel.
+#task 1 řešení 2
+#zajímalo by mě zda by toto řešení vyhovovalo. Zde je ten zámek složitější a vlákna spouštítm ve funkci po generování čásel.
+#Je vhodné vlákna spouštět ve funkci?
 
 import threading
 import random
