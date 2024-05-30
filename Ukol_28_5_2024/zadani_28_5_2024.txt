@@ -1,0 +1,38 @@
+https://materials.itstep.org/content/7ee4a646-7ab4-40ee-98df-1cbd9b423b69/en/?cache=0
+
+Task 1
+
+The app starts three threads when launched. The first thread fills a list with random numbers. Two other threads are waiting. When the list is filled, both threads start. The first thread finds the sum of the list elements, the second thread finds the average in that list. The received list, sum, and average are displayed on the screen.
+
+Task 2
+
+The user types in a path to a file. After this, three threads start. The first thread fills the file with random numbers. Two other threads are waiting. When the file is filled, the other threads start. The first thread finds all primes, the second finds the factorial of every number in the file. Each thread should write the search results to a new file. Print the statistics on these operations.
+
+Task 3
+
+The user enters a path to the existing directory and to a new one. After this, a thread starts to copy the content of the first directory to the second one. The directory structure needs to be preserved. Print the statistics on these operations.
+
+Task 4
+
+The user types in a path to a directory and a search word. After this, two threads start. The first one should find the files containing the search word and merge their contents into one file. The second one is waiting for the first thread to finish. After that, it cuts all forbidden words (the list of these words should be read from a file containing the list) from the new file. Print the statistics on these operations.
+
+
+cz
+Úkol 1
+
+Aplikace po spuštění spustí tři vlákna. První vlákno vyplní seznam náhodnými čísly. Čekají další dvě vlákna. Po naplnění seznamu se spustí obě vlákna.
+První vlákno najde součet prvků seznamu, druhé vlákno najde průměr v tomto seznamu. Na obrazovce se zobrazí seznam přijatých, součet a průměr.
+
+Úkol 2
+
+Uživatel zadá cestu k souboru. Poté začnou tři vlákna. První vlákno naplní soubor náhodnými čísly. Další dvě vlákna čekají. Po zaplnění souboru se spustí další vlákna.
+První vlákno najde všechna prvočísla, druhé najde faktoriál každého čísla v souboru. Každé vlákno by mělo zapsat výsledky hledání do nového souboru. Vytiskněte statistiky těchto operací.
+
+Úkol 3
+
+Uživatel zadá cestu do existujícího adresáře a do nového. Poté vlákno začne kopírovat obsah prvního adresáře do druhého. Adresářová struktura musí být zachována. Vytiskněte statistiky těchto operací.
+
+Úkol 4
+
+Uživatel zadá cestu k adresáři a hledané slovo. Poté začnou dvě vlákna. První by měl najít soubory obsahující hledané slovo a sloučit jejich obsah do jednoho souboru.
+Druhý čeká na dokončení prvního vlákna. Poté vyjme všechna zakázaná slova (seznam těchto slov by měl být načten ze souboru obsahujícího seznam) z nového souboru. Vytiskněte statistiky těchto operací.
