@@ -1,0 +1,28 @@
+SOCKET
+Zadání dostupné Zde: https://materials.itstep.org/content/54d7ef4c-7b3d-4004-bb49-508ae22123fb/en/?cache=0
+
+EN
+Module Parallel, Multithreaded, Network Programming
+Part 2
+Task 1
+Implement a client-server app that allows two people to play the game of noughts and crosses. One of the players initiates the game, if the second player confirms, the game starts. The game can be stopped, and the one who has stopped the game loses. After completing the game, you can initiate a re-match
+
+Task 2
+Implement a client-server app that allows you to transfer files. One user initiates the file transfer, the other confirms it. Files are sent after confirmation. If the transfer was successful, inform the sender about it.
+
+Task 3
+Implement a client-server app that allows users to chat. Each user enters a chat room under his or her usrename and password. All users can see all messages sent to the chat room.
+
+CZ
+
+Úkol 1
+Implementujte aplikaci klient-server, která umožní dvěma lidem hrát hru na nic a kříže. Jeden z hráčů zahájí hru, pokud druhý hráč potvrdí, hra začíná. Hru lze zastavit a ten, kdo hru zastavil, prohrává. Po dokončení hry můžete zahájit re-match
+
+Úkol 2
+Implementujte aplikaci klient-server, která vám umožní přenášet soubory. Jeden uživatel zahájí přenos souboru, druhý jej potvrdí. Soubory jsou odeslány po potvrzení. Pokud byl přenos úspěšný, informujte o tom odesílatele.
+
+Úkol 3
+Implementujte aplikaci klient-server, která uživatelům umožňuje chatovat. Každý uživatel vstoupí do chatovací místnosti pod svým uživatelským jménem a heslem. Všichni uživatelé mohou vidět všechny zprávy odeslané do chatovací místnosti.
+
+
+
