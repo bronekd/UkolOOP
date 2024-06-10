@@ -5,8 +5,9 @@ def send_file(filename):
     client.connect(('localhost', 9999))
 
     #odeslání názvu souboru
-    print(f"Odesílám název souboru: {filename}")
-    client.send(filename.encode())
+    filename_with_end = filename + "::END::"
+    print(f"Odesílám název souboru: {filename_with_end}\n")
+    client.send(filename_with_end.encode())
 
     #čtení v binárním režimu
     with open(filename, 'rb') as f:
@@ -16,10 +17,13 @@ def send_file(filename):
                 break
             client.send(data)
 
+    # Odeslat oddělovač po poslední části dat
+    client.send(b"::END_DATA::")
+
     response = client.recv(1024)
     print(response.decode())
     client.close()
 
 if __name__ == '__main__':
-    filename = input('Zadej název souboru pro odeslání: ')
+    filename = input('Zadej název souboru pro odeslání (soubor se jmenuje ahoj.txt): ')
     send_file(filename)

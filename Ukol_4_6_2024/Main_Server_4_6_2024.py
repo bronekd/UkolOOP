@@ -1,24 +1,35 @@
+
 import socket
 import threading
 import os
 
 def handle_client(client_socket):
     try:
+        filename = ""
         #příjme název souboru od clienta
-        filename = client_socket.recv(1024).decode()
-        if not filename:
-            return
+        while "::END::" not in filename:
+            filename += client_socket.recv(1024).decode()
 
-        print(f"Received {filename}")
+        filename = filename.replace("::END::", "")
 
-        with open(filename, "wb") as f:
+        #rozdělení názvu
+        base, ext = os.path.splitext(filename)
+        new_filename = f"{base}_prijato{ext}"
+
+        print(f"Received {new_filename}")
+
+        with open(new_filename, "wb") as f:
+            #data = "b"
             while True:
                 #příjme data od klienta
-                #print(f"Ve smyččce {filename} byl úspěšně přijat  ")
-                data = client_socket.recv(1024)
-                if not data:
+                chunk = client_socket.recv(1024)
+                if not chunk:
                     break
-                f.write(data)
+                if b"::END_DATA::" in chunk:
+                    data += chunk.replace(b"::END_DATA::", b"")
+                    f.write(data)
+                    break
+                f.write(chunk)
 
         print(f"Soubor {filename} byl úspěšně přijat")
         client_socket.send(b"Transfer successful")
@@ -43,3 +54,5 @@ def start_server():
 
 if __name__ == "__main__":
     start_server()
+
+
