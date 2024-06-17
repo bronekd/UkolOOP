@@ -46,9 +46,16 @@ print(name)
 print("---------")
 
 print("Zde je select zeleniny:")
-cur.execute("SELECT druh FROM vegfruit WHERE druh=zelenina")
-zelenin = cur.fetchall()
-print(zelenin)
+cur.execute("SELECT name FROM vegfruit WHERE druh='zelenina'")
+zelenina = cur.fetchall()
+print(zelenina)
+
+print("---------")
+
+print("Zde je select ovoce:")
+cur.execute("SELECT name FROM vegfruit WHERE druh='ovoce'")
+zelenina = cur.fetchall()
+print(zelenina)
 
 
 conn.close()
