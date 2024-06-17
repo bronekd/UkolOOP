@@ -21,6 +21,35 @@ conn.commit()
 
 #načtení dat
 cur.execute("SELECT * FROM vegfruit")
-print(cur.fetchall())
+#print(cur.fetchall())   ### Dotaz proč toto když odkomentuji nic se neprovede?
 
+rows = cur.fetchall()
+
+print("---------")
+
+print("Zde je neupravený výpis tabulky: ")
+print(rows)
+
+print("---------")
+
+print("Zde je výpis po řádcích:")
+for row in rows:
+    print(row[1:5])
+
+print("---------")
+
+print("Zde je select name:")
+cur.execute("SELECT name FROM vegfruit")
+name = cur.fetchall()
+print(name)
+
+print("---------")
+
+print("Zde je select zeleniny:")
+cur.execute("SELECT druh FROM vegfruit WHERE druh=zelenina")
+zelenin = cur.fetchall()
+print(zelenin)
+
+
+conn.close()
 
