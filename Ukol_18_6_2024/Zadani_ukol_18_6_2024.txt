@@ -1,0 +1,50 @@
+odkaz na ukol:
+https://materials.itstep.org/content/db4627a7-6143-4ec3-bfe2-9fc58a8bc165/en/?cache=0
+DB
+
+EN
+Task 1
+
+Create a Sales database consisting of three tables. This database must have the following tables: Sales (info about specific sales), Salespeople (info about salespeople), Customers (info about customers). Create an interface using the menu to display data from the tables. Minimum set to display:
+
+All purchases;
+All purchases from a specific salesperson;
+The largest amount of sales;
+The smallest amount of sales;
+The greatest amount of sales for a specific salesperson;
+The smallest amount of sales for a specific salesperson;
+The largest amount of purchase for a specific customer;
+The smallest amount of purchase for a specific customer;
+The salesperson who has the largest amount of sales;
+The customer who has the largest amount of purchase.
+Task 2
+
+Add mechanisms for updating, deleting, inserting data into the database using a menu. The user cannot enter INSERT, UPDATE, DELETE directly. Prevent users from updating and deleting all data for each table (UPDATE and DELETE without conditions).
+
+Task 3
+
+Supplement Task 1 with the ability to save the results of filters to a file. The path to the file and its name are specified in the application settings.
+
+
+CZ
+Úkol 1
+
+Vytvořte databázi prodeje sestávající ze tří tabulek. Tato databáze musí mít následující tabulky: Prodej (informace o konkrétních prodejích), Prodejci (informace o prodejcích), Zákazníci (informace o zákaznících). Vytvořte rozhraní pomocí nabídky pro zobrazení dat z tabulek. Minimální nastavení pro zobrazení:
+
+Všechny nákupy;
+Všechny nákupy od konkrétního prodejce;
+Největší objem prodeje;
+Nejmenší množství tržeb;
+Největší objem prodeje pro konkrétního prodejce;
+Nejmenší objem prodeje pro konkrétního prodejce;
+Největší částka nákupu pro konkrétního zákazníka;
+Nejmenší částka nákupu pro konkrétního zákazníka;
+Prodejce, který má největší objem prodeje;
+Zákazník, který má největší nákup.
+Úkol 2
+
+Přidejte mechanismy pro aktualizaci, mazání, vkládání dat do databáze pomocí nabídky. Uživatel nemůže přímo zadávat INSERT, UPDATE, DELETE. Zabránit uživatelům aktualizovat a mazat všechna data pro každou tabulku (UPDATE a DELETE bez podmínek).
+
+Úkol 3
+
+Doplňte Úkol 1 o možnost uložit výsledky filtrů do souboru. Cesta k souboru a jeho název jsou uvedeny v nastavení aplikace._18_6_2024
