@@ -16,10 +16,13 @@ def show_menu():
     print("10. Zobrazit zákazníka s největším nákupem")
     print("0. Ukončit")
 
-def get_sales_data(query):
+def get_sales_data(query, params=None):
     conn = sqlite3.connect('sales.db')
     cursor = conn.cursor()
-    cursor.execute(query)
+    if params:
+        cursor.execute(query, params)
+    else:
+        cursor.execute(query)
     data = cursor.fetchall()
     conn.close()
     return data
@@ -29,12 +32,20 @@ def display_all_purchases():
     for row in data:
         print(row)
 
+def display_purchases_by_salesperson(salesperson_id):
+    data = get_sales_data("SELECT * FROM Sale WHERE Salesperson_id = ?", (salesperson_id,))
+    for row in data:
+        print(row)
+
 def main():
     while True:
         show_menu()
         choice = input("Vyberte možnost: ")
         if choice == "1":
             display_all_purchases()
+        elif choice == "2":
+            salesperson_id = int(input("Zadej ID prodejce: "))
+            display_purchases_by_salesperson(salesperson_id)
         elif choice == ("0"):
             break
         else:
